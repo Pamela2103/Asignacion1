@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuadro Negro con Sección Vertical Naranja</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .rectangle {
+      position: absolute;
+      width: 860px;
+      height: 730px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: black;
+      display: flex;
+    }
+    .orange-section {
+      width: 40%;
+      height: 100%;
+      background-color: #CA5D00;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .black-section {
+      position: absolute;
+      width: 100%;
+      height: 15%;
+      top: 0;
+      left: 0;
+      background-color: black;
+    }
+    .black-section2 {
+      position: absolute;
+      width: 300px;
+      height: 35px;
+      top: 300px;
+      left: 10;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .user-text {
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #f3f3f3;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        width: 200px;
+        height: 140px;
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="rectangle">  
+    <div class="orange-section">
+      <div class="black-section">
+        <h1 style="color: white; text-align: center; padding-top: 10px;">Perfil de Usuario</h1>
+      </div>
+      <div style="position: absolute; bottom: 450px; left: 50%; transform: translateX(-50%); text-align: center;">
+        <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\fondfo naraja.png"alt="Imagen de perfil" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+      </div>
+      <div class="black-section2" style="display: flex; justify-content: center; align-items: center;">
+        <h1 style="color: white; text-align: center; font-size: 20px;">Nombre de Usuario</h1>
+      </div>
+      <div style="display: flex; justify-content: center; font-size: 10px; align-items: center; height: 100%; margin-top: 300px; flex-direction: column;">
+        <h1 style="color: white; text-align: center;">Imagen</h1>
+        <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\1.png" alt="Descripción de la imagen" style="width: 100px; height: 100px; object-fit: cover;">
+        <h1 style="color: white; text-align: center; font-size: 20px;">Comentario del Usuario</h1>
+        <div class="user-text">Los elementos naturales que aparecen en la fotografía están dominados por un relieve continental de un valle.</div>
+      </div>      
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-left: 70px;">
+        <h1 style="color: white; text-align: center; left: 60%; font-size: 20px;">Comentario de Antony</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="width: 300px; height: 50px; background-color: #f3f3f3; border: 2px solid black; border-radius: 5px;">Desearia poder compartir con mi familia en ese hermoso lugar</div>
+        </div>
+        <h1 style="color: white; text-align: center;font-size: 20px;">Comentario de Axel</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="width: 300px; height: 50px; background-color: #f3f3f3; border: 2px solid black; border-radius: 5px;">El paisaje de la foto que capturaste me provoca interior</div>
+        </div>
+        <h1 style="color: white; text-align: center;font-size: 20px;">Comentar la publicacion</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <textarea style="width: 280px; height: 45px; background-color: #f3f3f3; border: 2px solid black; border-radius: 5px; font-size: 16px; padding: 10px;" placeholder="Escribe tu comentario aquí"></textarea>
+        </div>
+        <div style="position: absolute; bottom: 0; left: 55%; transform: translateX(-50%); text-align: center; font-size: 20px">
+            <p style="color: white;">Reacciona a la publicacion</p>
+        </div>
+        <div style="position: absolute; top: 10px; right: 10px;">
+            <button onclick="window.history.back();" style="background-color: #000000; border: 2px solid black; border-radius: 15px; padding: 10px;">
+              <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\atrasboton.jfif" alt="Regresar" style="width: 70px; height: 40px;">
+            </button>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; position: absolute; bottom: 100px; right: 20px;">
+            <button style="background-color: #CA5D00; color: white; border: none; border-radius: 5px; padding: 10px 20px; font-size: 16px;">Publicar el comentario</button>
+        </div>
+        <div style="position: absolute; bottom: 10px; right: 2px;">
+            <button onclick="window.history.back();" style="background-color: #000000; border: 2px solid black; border-radius: 15px; padding: 10px;">
+                <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\like.jfif" alt="Regresar" style="width: 70px; height: 40px;">
+            </button>
+        </div>
+        <div style="position: absolute; bottom: 10px; right: 120px;">
+            <button onclick="window.history.back();" style="background-color: #000000; border: 2px solid black; border-radius: 15px; padding: 10px;">
+              <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\dislike.jfif" alt="Regresar" style="width: 70px; height: 40px;">
+            </button>
+        </div>          
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capture your imagination</title>
+    <style>
+      .rectangle {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        background-color: black;
+      }
+      .left {
+        float: left;
+        width: 45%;
+        height: 100%;
+      }
+      .right {
+        float: left;
+        width: 55%;
+        height: 100%;
+        font-family: 'Indie Flower', cursive;
+      }
+      img {
+        width: 95%;
+        height: 100%;
+        object-fit: cover;
+      }
+      form {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        background-color: black;
+        padding-left: 20px;
+        background-image: url('C:\Users\barra\Downloads\loginrec.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 10px 10px;
+      }
+      input[type=password] {
+        background-image: url('C:\Users\barra\Downloads\pass.png');
+        background-repeat: no-repeat;
+        background-position: 5px center;
+        background-size: 10px 10px;
+      }
+      button {
+        background-color: orange; /* Naranja */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      
+      button span a {
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+    
+      span a {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        font-size: 14px;
+        margin: 0;
+        cursor: pointer;
+      }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="rectangle">
+      <div class="left">
+        <img src="C:\Users\barra\OneDrive\Escritorio\Tarea\html\imagenes\login.png" alt="ImagenLogin">
+      </div>
+      <div class="right">
+        <form action="file:///C:/Users/barra/OneDrive/Escritorio/Tarea/html/Inicio.html">
+          <h2>Capture your imagination</h2>
+          <input type="text" id="usuario" name="usuario" placeholder="Usuario"><br><br>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Contrasena"><br><br>
+          <div>
+            <button type="submit" target="_blank">Iniciar sesión</button>
+            <br><br>
+            <span><a href="#">Registrarse</a></span>
+            <br><br>
+                <span><a href="#">¿Olvidaste contraseña?</a></span>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </body>
+    </html>
